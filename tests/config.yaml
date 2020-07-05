@@ -1,0 +1,19 @@
+t:
+  class: gdianov\opium\tests\classes\T
+  constructor:
+    - 1
+  props:
+    - bar: barValue
+
+c:
+  class: gdianov\opium\tests\classes\C
+  constructor:
+    - '@t'
+
+p:
+  class: gdianov\opium\tests\classes\P
+  constructor:
+    - opium
+  props:
+    - c: '@c'
+
