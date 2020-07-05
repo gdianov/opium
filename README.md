@@ -2,6 +2,9 @@
 
 ## How to usage?
 
+### Install: 
+> composer require gdianov/opium
+
 1. Create your yaml config like config.yaml:
     ```
      t:
@@ -75,9 +78,8 @@ $c = $opium->makeDynamic([
 ```php
 $t = $opium->getWithParams('t', [
         'props' => [
-            [
-                'bar' => 'Another Value']
-            ]
+            ['bar' => 'Another Value'],
+        ]
 ]);
 
 //Instance T with new property bar value
