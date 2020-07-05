@@ -1,6 +1,6 @@
 # Opium - Simple Yaml DI Container
 
-##How to usage?
+## How to usage?
 
 1. Create your yaml config like config.yaml:
     ```
@@ -47,7 +47,7 @@ $c = $opium->make('c');
 //injected object $c by property and string by constructor
 $p = $opium->make('p'); 
 
-You can injected dependency by property and constructor.
+//You can injected dependency by property and constructor.
 
 ```
 **Also we can create new object dynamically:** 
@@ -68,7 +68,7 @@ $c = $opium->makeDynamic([
     'constructor' => ['@t']   
 ]);       
 
-New C instance with T dependency      
+//New C instance with T dependency      
 ```
 
 **You can get new instance with another params:**
@@ -80,8 +80,8 @@ $t = $opium->getWithParams('t', [
             ]
 ]);
 
-Instance T with new property bar value
+//Instance T with new property bar value
              
 ```
 
-> ####You can combine objects as you like without restricting yourself to anything. Try it.
+> #### You can combine objects as you like without restricting yourself to anything. Try it.
